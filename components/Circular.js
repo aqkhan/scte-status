@@ -1,4 +1,4 @@
-import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import { CircularProgressbar, CircularProgressbarWithChildren, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import Head from 'next/head';
 import '../assets/style.css';
@@ -10,9 +10,8 @@ const Circular = ( { per, text} ) => {
         updatePercentage(per);
     }, [percentage])
     return (
-        <CircularProgressbar 
+        <CircularProgressbarWithChildren 
                 value={percentage} 
-                text={text}
                 styles={buildStyles({
                     // Rotation of path and trail, in number of turns (0-1)
                     // rotation: 0.25,
@@ -35,7 +34,10 @@ const Circular = ( { per, text} ) => {
                     trailColor: '#d6d6d6',
                     backgroundColor: 'rgb(236, 234, 234)',
                   })}
-        />
+        >
+            <h2>{text}</h2>
+            <span>{percentage}%</span>
+        </CircularProgressbarWithChildren>
     )
 }
 
