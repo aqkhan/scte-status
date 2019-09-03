@@ -1,4 +1,4 @@
-import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import { CircularProgressbar, CircularProgressbarWithChildren, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import Head from 'next/head';
 import '../assets/style.css';
@@ -14,16 +14,28 @@ export default () => {
                 <h6><a href="/">{ `< Back` }</a></h6>
             </div>
             <div className="item">
-                <Circular per={86} text={'User Stories Block'} />
+                <CircularProgressbarWithChildren value={86} >
+                    <h2>User Stories Block</h2>
+                    <span>86%</span>
+                </CircularProgressbarWithChildren>
             </div>
             <div className="item">
-                <Circular per={0} text={'User Stories Testing'}/>
+                <CircularProgressbarWithChildren value={0} >
+                    <h2>User Stories Testing</h2>
+                    <span>0%</span>
+                </CircularProgressbarWithChildren>
             </div>
             <div className="item">
-                <Circular per={100} text={'Features Block'}/>
+                <CircularProgressbarWithChildren value={100} >
+                    <h2>Functional Featuers</h2>
+                    <span>100%</span>
+                </CircularProgressbarWithChildren>
             </div>
             <div className="item">
-                <Circular per={100} text={'Features Testing'}/>
+                <CircularProgressbarWithChildren value={100} >
+                    <h2>Functional Testing</h2>
+                    <span>100%</span>
+                </CircularProgressbarWithChildren>
             </div>
         </div>
     </>
