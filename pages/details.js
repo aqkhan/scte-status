@@ -2,7 +2,7 @@ import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import Head from 'next/head';
 import '../assets/style.css';
-import Circular from '../components/circular';
+import Circular from '../components/Circular';
 export default () => {
     return (
     <>
