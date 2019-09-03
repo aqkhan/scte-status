@@ -30,7 +30,7 @@ const Circular = ( { per, text} ) => {
                     // pathTransition: 'none',
                  
                     // Colors
-                    pathColor: `rgba(53, 111, 0, ${percentage / 100})`,
+                    pathColor: `rgba(86, 145, 199, ${percentage / 100})`,
                     trailColor: '#d6d6d6',
                     backgroundColor: 'rgb(236, 234, 234)',
                   })}
