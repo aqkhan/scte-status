@@ -35,7 +35,7 @@ const Circular = ( { per, text} ) => {
                     backgroundColor: 'rgb(236, 234, 234)',
                   })}
         >
-            <h2>{text}</h2>
+            <h2 dangerouslySetInnerHTML={ { __html: text } } style={{ textAlign: "center" }}></h2>
             <span>{percentage}%</span>
         </CircularProgressbarWithChildren>
     )

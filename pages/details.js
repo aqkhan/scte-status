@@ -20,10 +20,10 @@ export default () => {
                 <Circular per={0} text={'User Stories Testing'}/>
             </div>
             <div className="item">
-                <Circular per={100} text={'Functional Featuers'}/>
+                <Circular per={100} text={'Functional Features'}/>
             </div>
             <div className="item">
-                <Circular per={100} text={'Functional Testing'}/>
+                <Circular per={100} text={'Functional Features <br> Testing'}/>
             </div>
         </div>
     </>
