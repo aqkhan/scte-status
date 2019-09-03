@@ -15,7 +15,7 @@ export default () => {
             <div className="item">
             <h2 style={{ textAlign: "center" }}>SCTE ISBE</h2>
             <h4>Website Progress as of { date } </h4>
-            <Progress percent={75} />
+            <Progress percent={72} />
             <h6 style={{ textAlign: "right" }}><a href="/details">DETAILS ></a></h6>
             </div>
         </div>

@@ -14,16 +14,16 @@ export default () => {
                 <h6><a href="/">{ `< Back` }</a></h6>
             </div>
             <div className="item">
-                <Circular per={75} text={'Functional Features'} />
+                <Circular per={86} text={'User Stories Block'} />
             </div>
             <div className="item">
-                <Circular per={15} text={'Functional Features'}/>
+                <Circular per={0} text={'User Stories Testing'}/>
             </div>
             <div className="item">
-                <Circular per={15} text={'Functional Features'}/>
+                <Circular per={100} text={'Features Block'}/>
             </div>
             <div className="item">
-                <Circular per={15} text={'Functional Features'}/>
+                <Circular per={100} text={'Features Testing'}/>
             </div>
         </div>
     </>
